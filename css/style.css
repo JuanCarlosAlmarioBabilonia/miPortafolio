@@ -1,0 +1,151 @@
+@import url(variables.css);
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.main, .main2, .main3 {
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  overflow: hidden; 
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.centered-text {
+  position: absolute;
+  font-family: "PoppinsSemiBold";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-cinco);
+  font-size: 4.5em;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 20px;
+  width: 80%; 
+  text-shadow: 
+    5px 10px 0 var(--color-uno),
+    5px 5px 0 var(--color-uno),
+    5px 5px 0 var(--color-uno),
+    5px 5px 0 var(--color-uno);
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(50%); /* Empieza 50% más abajo */
+        opacity: 0; /* Inicialmente invisible */
+    }
+    100% {
+        transform: translateY(0); /* Termina en su posición original */
+        opacity: 1; /* Se hace completamente visible */
+    }
+}
+
+.main2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transiciones suaves */
+}
+
+.main3{
+    background-color: aquamarine;
+    border-bottom: .1px solid black;
+}
+
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "PoppinsSemiBold";
+  flex: 2;
+  padding: 3rem;
+  max-width: 30%;
+}
+  
+  .left h1 {
+      font-size: 3.5rem;
+  }
+  
+  .left h2 {
+      font-size: 3rem;
+  }
+  
+  .left p {
+      font-size: 1.5rem;
+  }
+
+.center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 20%;
+}
+
+.center img {
+  height: 80vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-top: 3vh;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+#changing-text {
+    display: inline-block;
+    min-width: 150px;
+    text-align: center; /* Asegura que el texto cambiante esté centrado */
+    font-size: 2rem; /* Ajusta el tamaño de fuente según lo necesites */
+}
+  
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }

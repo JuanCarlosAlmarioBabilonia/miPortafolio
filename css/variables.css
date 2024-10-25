@@ -1,0 +1,18 @@
+:root{
+    --color-uno: #151312;
+    --color-dos: #969698;
+    --color-tres: #343338;
+    --color-cuatro: #b6b3b0;
+    --color-cinco: #C2C6CE;
+    --color-seis: #000000;
+}
+
+@font-face {
+    font-family: "PoppinsRegular";
+    src: url(../storage/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "PoppinsSemiBold";
+    src: url(../storage/fonts/Cocogoose-Pro-Darkmode-trial.ttf);
+}

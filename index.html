@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Mi Portafolio</title>
+</head>
+<body>
+    <section class="main">
+        <img src="./storage/imgs/Dark Mode.svg">
+        <div class="centered-text">La resiliencia y la ambición son mis herramientas para alcanzar el éxito</div>
+    </section>
+
+    <section class="main2">
+        <div class="left">
+            <h1>! Hola a todos !</h1>
+            <h2>Soy Juan Carlos Almario</h2>
+            <p>Un Desarrollador de Software<br>
+            especializado en el back-end</p>
+        </div>
+        <div class="center">
+            <img src="./storage/imgs/yo.jpg">
+        </div>
+        <div class="right">
+            <h2>Con competencias en</h2>
+            <span id="changing-text"></span>
+            <p>Además poseo un enfoque MERN Stack (MongoDB, Express, React, y Node.js) y he desarrollado proyectos con un diseño front-end destacado y alta funcionalidad en back-end, lo que ha enriquecido mi experiencia y me impulsa a seguir creciendo como profesional</p>
+        </div>
+    </section>
+
+    <section class="main3">
+        <p>OBJETIVOS PROFESIONALES</p>
+    </section>
+
+    <section class="main3">
+        <p>MISION Y VISIÓN</p>
+    </section>
+
+    <section class="main3">
+        <p>VALORES</p>
+    </section>
+
+    <section class="main3">
+        <p>CERTIFICADOS</p>
+    </section>
+
+    <section class="main3">
+        <p>SERVICIOS</p>
+    </section>
+
+    <section class="main3">
+        <p>PROYECTOS</p>
+    </section>
+
+    <section class="main3">
+        <p>DATOS DEL CONTACTO</p>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const words = ['PROACTIVIDAD', 'DINAMISMO', 'ADAPTACIÓN AL CAMBIO', 'ANÁLISIS SITUACIONAL', 'INGLÉS', 'HABILIDADES SOCIALES'];
+    const changingText = document.getElementById('changing-text');
+    let currentIndex = 0;
+
+    function changeWord() {
+        changingText.style.animation = 'fadeOut 0.5s';
+        
+        setTimeout(() => {
+            changingText.textContent = words[currentIndex];
+            changingText.style.animation = 'fadeIn 0.5s';
+            currentIndex = (currentIndex + 1) % words.length;
+        }, 500);
+    }
+
+    // Iniciar el cambio de palabras
+    changeWord();
+    setInterval(changeWord, 2000);
+});
+
+    </script>
+</body>
+</html>
