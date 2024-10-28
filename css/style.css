@@ -107,12 +107,7 @@ body {
   background-color: var(--color-uno);
 }
 
-.main6{
-  display: flex;
-  flex-direction: column;
-}
-
-.main7{
+.main6, .main7, .main8{
   display: flex;
   flex-direction: column;
 }
@@ -135,6 +130,25 @@ body {
   width: 90%;
 }
 
+.grid-container4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  height: 50vh;
+  width: 90%;
+}
+
+.lenguajes{
+  display: flex;
+  flex-direction: row;
+}
+
+.lenguajes img {
+  width: 10px;
+  height: 10px;
+}
+
 .grid-container3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -151,6 +165,13 @@ body {
   font-size: 2rem;
 }
 
+.title_co {
+  color: white;
+  margin-top: -16rem;
+  margin-bottom: -1rem;
+  font-size: 2rem;
+}
+
 .grid-item, .c {
   background-color: var(--color-cinco);
   display: flex;
@@ -162,7 +183,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.co {
+.co, .cu {
   background-color: #686868;
   display: flex;
   flex-direction: row;
@@ -170,6 +191,62 @@ body {
   color: black;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cu{
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  height: 32vh;
+}
+
+.c_info{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  height: 10vh;
+}
+
+.cu img {
+  width: 100%; /* Cambia el tamaño de las imágenes en .cu */
+  height: 22vh
+}
+
+/* Estilos específicos para imágenes en lenguajes */
+.lenguajes img {
+  width: 50px;
+  height:50px /* Cambia el tamaño de las imágenes en lenguajes */
+}
+
+.lenguajes{
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  bottom: 0;
+}
+
+
+.left_p{
+  height: 35vh;
+  width: 50%;
+}
+
+.right_p{
+  height: 35vh;
+  width: 50%;
+  font-size: 0.8rem;
+  position: relative;
+}
+
+.left_p p{
+  font-family: "PoppinsRegular";
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+.titulo_p{
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .right_c3{
@@ -275,7 +352,7 @@ body {
   grid-row: 3 / 4;
 }
 
-.main8, .main9 {
+.main9 {
   background-color: var(--color-cinco);
   border-bottom: 0.1px solid black;
 }
